@@ -99,7 +99,7 @@ $(document).ready(function(){
     //  verifique se o botão Enviar em 'camera' foi clicado e obtenha a avaliação apropriada
     $('#c_button').click(function(){
 
-        review = $('c_textbox').val()
+        review = $('#c_textbox').val()
         input_data = {'customer_review' : review}
         ajax_request('/predict' , input_data)
 
@@ -109,7 +109,7 @@ $(document).ready(function(){
     //  verifique se o botão Enviar em 'headphones' foi clicado e obtenha a avaliação apropriada
     $('#h_button').click(function(){
 
-        review = $('h_textbox').val()
+        review = $('#h_textbox').val()
         input_data = {'customer_review' : review}
         ajax_request('/predict' , input_data)
 
@@ -119,7 +119,7 @@ $(document).ready(function(){
     //  verifique se o botão Enviar em 'videogame' foi clicado e obtenha a avaliação apropriada
     $('#v_button').click(function(){
 
-        review = $('v_textbox').val()
+        review = $('#v_textbox').val()
         input_data = {'customer_review' : review}
         ajax_request('/predict' , input_data)
 
